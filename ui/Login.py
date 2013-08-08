@@ -89,7 +89,7 @@ class CLILogin(Login):
         
         for field in self.fields:
             if field['type'] == 'PASSWORD':
-                self.values[field['key']] = getpass.getpass("%s: " % field['label'])
+                self.values[field['key']] = getpass.getpass("Please Enter your %s: " % field['label'])
             else:
                 self.values[field['key']] = self.__prompt__(field['label'], field['default'])
 
