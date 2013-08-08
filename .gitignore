@@ -1,0 +1,8 @@
+*.py[oc]
+build
+dist
+*.egg-info
+.project
+.pydevproject
+/temp
+/setup.cfg
