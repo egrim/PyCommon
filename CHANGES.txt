@@ -1,2 +1,3 @@
 v0.1.0,  8 Aug	2013 -- Initial Release, Common Login dialog
+v0.1.1,  8 Aug  2013 -- Added common local storage module
 
