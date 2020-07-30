@@ -1,5 +1,13 @@
+try:
+    from tkinter import *
+except NameError:
+    from Tkinter import *
 
-from Tkinter import *
+try:
+    input = raw_input
+except NameError:
+    pass
+
 import getpass
 
 class Login:
@@ -85,7 +93,7 @@ class GUILogin(Login):
 
 class CLILogin(Login):
     def display(self):
-        print self.title
+        print(self.title)
         
         for field in self.fields:
             if field['type'] == 'PASSWORD':
@@ -99,7 +107,7 @@ class CLILogin(Login):
         else:
             default_prompt = ''
             
-        return raw_input('Please Enter your %s%s: ' % (prompt, default_prompt)) or default
+        return input('Please Enter your %s%s: ' % (prompt, default_prompt)) or default
 
 
 class Factory:
